@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    background-color: rgb(37, 155, 155);
+    height: 10vmin;
+    line-height: 10vmin;
+}
+
+#heading{
+    text-align: center;
+    color: #ece5e5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#user_form{
+    border: 1px solid black;
+    margin: 10vmin;
+}

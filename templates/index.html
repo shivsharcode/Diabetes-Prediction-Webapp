@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction </title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div id="header">
+        <h1 id="heading">Diabetes Prediction 🍯 App</h1>
+    </div>
+
+    <div class="user_form_class" id="user_form">
+        <form action="/submit" method="post">
+            <label for="pregnancies">Pregnancies </label>
+            <input type="number" id="pregnancies" name="pregnancies" >
+        </form>
+    </div>
+
+    <div id="describeRef">
+        <img src=" {{ url_for('static', filename='images/diabetes_describe_ref.png') }} " alt="Dataset Describe">
+    </div>
+</body>
+</html>
