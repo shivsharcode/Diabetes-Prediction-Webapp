@@ -119,11 +119,15 @@ body{
     padding: 20px;
     
     border-radius: 10px;
-    background-color: #CAD0CE;
+    /* background-color: #CAD0CE; */
+    background-color: #ADEBEB;
 }
 
-.result-div-class h2{
+.result-div-class p{
     text-align: center;
+    color: #e8286e;
+    font-weight: bolder;
+    font-size: 28px;
 }
 
 /* ........................REFERENCE IMAGE..................................... */
