@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    background-color: #F5F5F5;
+}
+
 #header{
     background-color: rgb(37, 155, 155);
     height: 10vmin;
@@ -18,4 +22,116 @@
 #user_form{
     border: 1px solid black;
     margin: 10vmin;
+}
+
+/* ....................................FORM................................... */
+
+.user_form_class {  
+    max-width: 600px;
+    /* margin: 0 auto; */
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#submit-btn:hover {
+    background-color: #218838;
+}
+
+/* ......................RESULT DIV......................................... */
+.result-div-class{
+    max-width: 600px;
+    border: 1px solid black;
+    margin: 10vmin;
+    padding: 20px;
+    
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.result-div-class h2{
+    text-align: center;
+}
+
+/* ........................REFERENCE IMAGE..................................... */
+
+#describeRefImg{
+    height: 50vmin;
+    margin: 2%;
+    opacity: 0.4;
+    border: 0.5rem solid gray ;
+    transition: opacity 0.5s ease;
+    
+}
+
+#describeRefImg:hover{
+    cursor:not-allowed;
+    border-color: rgb(191, 191, 191);
+    transition-duration: 200ms  ;
+}
+
+#toggleButton {
+    position: absolute;
+    /* top: 50%;    */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    padding: 10px 20px;
+    /* background-color: rgb(227, 23, 125); */
+    background-color: #F5AF00;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 16px;
+    transition: opacity 0.5s ease; /* Smooth transition */
+    transition: filter;
+}
+#toggleButton:hover{
+    filter:contrast(10.5rem);
+    box-shadow: 0 0 10px rgba(234, 191, 0, 0.6), 0 0 20px rgba(218, 234, 0, 0.4), 0 0 30px rgba(231, 227, 1, 0.2);
+}
+
+#toggleButton.hidden {
+    opacity: 0; 
+    pointer-events: none;
+}
+
+#describeRef{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px pink solid;
+
 }
