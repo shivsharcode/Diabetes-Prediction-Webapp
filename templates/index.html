@@ -61,6 +61,8 @@
                     <input type="number" id="age" name="age" required>
                 </div>
 
+                <!-- FORM BUTTONS  -->
+
                 <div class="form-button-class" id="form-button">
 
                     <button type="submit" id="submit-btn">
@@ -75,7 +77,24 @@
 
         <!-- RESULTS DIV -->
         <div class="result-div-class" id="resultdiv">
-            <h2>Result</h2>
+            <p>Result</p>
+
+            {# sample data collected testing #}
+
+            {% if form_data %}
+
+            <h3 style="text-align: center;">sample data collected testing</h3>
+
+            {% for key, value in form_data.items() %}
+            {{ key }} : {{ value }} <br>
+
+            {% endfor %}
+
+            Result = {{ result }}
+
+            {% endif %}
+
+
         </div>
 
 
