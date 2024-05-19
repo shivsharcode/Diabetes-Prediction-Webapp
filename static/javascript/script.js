@@ -50,7 +50,5 @@ const resultDiv = document.getElementById('resultdiv') ;
 const body = document.querySelector('body') ;
 if(resultText == "Diabetic" || resultText == "Non-Diabetic"){
     resultDiv.style.backgroundImage = "url('/static/images/FOURTH-DESIGN/endingPic.png')" ;
-    if(resultText == "Diabetic"){
-        resultText.style.color = "red" ;
-    }
+    
 }

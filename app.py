@@ -25,7 +25,6 @@ def data_entry():
         
         result = diabetes_predictor(form_data)
         return render_template('index.html',  result=result)
-        # return jsonify(result = result)
     return redirect(url_for('home'))
 
 if __name__ == '__main__':
