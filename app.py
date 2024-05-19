@@ -1,12 +1,12 @@
 
-from flask import Flask, render_template, redirect, url_for, request
+from flask import Flask, render_template, redirect, url_for, request, jsonify
 from Diabetes_python import diabetes_predictor
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('index.html', form_data=None, result=None)
+    return render_template('index.html', result=None)
 
 @app.route('/submit', methods=['POST', 'GET'])
 def data_entry():
@@ -24,7 +24,8 @@ def data_entry():
         }
         
         result = diabetes_predictor(form_data)
-        return render_template('index.html', form_data=form_data, result=result)
+        return render_template('index.html',  result=result)
+        # return jsonify(result = result)
     return redirect(url_for('home'))
 
 if __name__ == '__main__':
