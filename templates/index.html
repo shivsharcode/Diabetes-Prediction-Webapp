@@ -20,7 +20,7 @@
 
         <!-- FORM -->
         <div class="user_form_class" id="user_form">
-            <form action="/submit" method="post">
+            <form action="/submit" method="post" id="diabetes-form">
                 <div class="form-group">
                     <label for="pregnancies">Pregnancies</label>
                     <input type="number" id="pregnancies" name="pregnancies" required>
@@ -77,20 +77,21 @@
 
         <!-- RESULTS DIV -->
         <div class="result-div-class" id="resultdiv">
-            <p>Result</p>
+
+            <!-- <p id="result-text">RESULT</p> -->
 
             {# sample data collected testing #}
 
-            {% if form_data %}
+            {% if result %}
 
-            <h3 style="text-align: center;">sample data collected testing</h3>
+            {% if result == "Diabetic" %}
+            <p id="result-text" style="color: #500212;">{{ result }}</p>
+            {% else %}
+            <p id="result-text" >{{ result }}</p>
+            {% endif %}
 
-            {% for key, value in form_data.items() %}
-            {{ key }} : {{ value }} <br>
-
-            {% endfor %}
-
-            Result = {{ result }}
+            {% else %}
+            <p id="result-text">RESULT</p>
 
             {% endif %}
 

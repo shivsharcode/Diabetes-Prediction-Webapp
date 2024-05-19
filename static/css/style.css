@@ -15,7 +15,7 @@ body{
 
 #heading{
     text-align: center;
-    color: #ece5e5;
+    color: rgb(255, 255, 255);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -39,6 +39,7 @@ body{
     /* border: 1px solid #ccc; */
     border-radius: 10px;
     background-color: #f9f9f9;
+    /* background-color: #f3e1d5; */
 }
 
 .form-group {
@@ -117,18 +118,27 @@ body{
     border: 1px solid black;
     margin: 10vmin;
     padding: 20px;
-    
     border-radius: 10px;
-    /* background-color: #CAD0CE; */
-    background-color: #ADEBEB;
+    /* background-color: #2C6559; */
+    background-color: #3D8C87;
 }
 
 .result-div-class p{
     text-align: center;
-    color: #e8286e;
-    font-weight: bolder;
-    font-size: 28px;
+    color: #2C6559;
+    font-weight:800;
+    font-size: 29px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3%;
+    margin-top: 7%;
 }
+
+#resultdiv{
+    background-image: url(../images/FOURTH-DESIGN/startingPic.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 
 /* ........................REFERENCE IMAGE..................................... */
 
@@ -148,24 +158,35 @@ body{
 }
 
 #toggleButton {
-    position: absolute;
-    /* top: 50%;    */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
+    /* position: absolute;
+    top: 50%;   
+   
     padding: 10px 20px;
-    /* background-color: rgb(227, 23, 125); */
     background-color: #F5AF00;
     color: white;
     border: none;
     border-radius: 0.3rem;
     cursor: pointer;
     font-size: 16px;
-    transition: opacity 0.5s ease; /* Smooth transition */
-    transition: filter;
+    transition: opacity 0.5s ease; 
+    transition: filter; */
+
+    position: absolute;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+
 }
 #toggleButton:hover{
-    filter:contrast(10.5rem);
-    box-shadow: 0 0 10px rgba(234, 191, 0, 0.6), 0 0 20px rgba(218, 234, 0, 0.4), 0 0 30px rgba(231, 227, 1, 0.2);
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+#toggleButton:active{
+    transform: scale(0.9);
+    filter: brightness(90%);
 }
 
 #toggleButton.hidden {
@@ -178,7 +199,7 @@ body{
     justify-content: center;
     align-items: center;
 
-    border: 2px pink solid;
+    /* border: 2px pink solid; */
 
 }
 
